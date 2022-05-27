@@ -11,7 +11,7 @@ interface RetroFitBuilder {
     fun getPokemonById(@Path("id") id:String): retrofit2.Call<PokemonEntry>
 
     companion object{
-       private val BASE_URL = "https://pokeapi.co/api/v2/pokemon/27"
+       private val BASE_URL = "https://pokeapi.co/api/v2/"
 
         fun create(): RetroFitBuilder{
             val retrofit = Retrofit.Builder()
